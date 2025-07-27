@@ -17,6 +17,11 @@
   border-radius: 20px;
 }
 
+.more-information section:hover {
+  background-color: #55569e;
+  border: 1px solid #55569e;
+}
+
 .accordion {
   border-radius: 20px;
   padding: 1rem 2rem;
@@ -29,9 +34,8 @@
   cursor: pointer;
 }
 
-.accordion.open {
+.accordion:hover {
   background-color: #55569e;
-  border: 1px solid #55569e;
 }
 
 .more-information section.open {
@@ -54,8 +58,13 @@
 
 .panel {
   display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
   width: 100%;
-  padding: 1rem;
-  border-radius: 10px;
-  background-color: #55569e;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.panel.open {
+  display: inline;
+  opacity: 1;
 }
