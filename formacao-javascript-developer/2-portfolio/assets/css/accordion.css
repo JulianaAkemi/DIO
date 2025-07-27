@@ -1,0 +1,61 @@
+.more-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 2rem;
+}
+
+.more-information section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.accordion {
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.accordion.open {
+  background-color: #55569e;
+  border: 1px solid #55569e;
+}
+
+.more-information section.open {
+  background-color: #55569e;
+  border: 1px solid #55569e;
+}
+
+.accordion-icon {
+  width: 1.5rem;
+  height: 0.8rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("/assets/img/icons/arrow-icon.svg");
+  transition: transform 0.3s ease;
+}
+
+.accordion.open .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.panel {
+  display: none;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #55569e;
+}
