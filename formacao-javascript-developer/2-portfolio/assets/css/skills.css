@@ -1,0 +1,43 @@
+.skills {
+  display: flex;
+  gap: 2rem;
+}
+
+.skills h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.skills .hard-skills ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 210px;
+}
+
+.skills .hard-skills ul li img {
+  width: 50px;
+  margin: 0.5rem;
+}
+
+.skills .soft-skills ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skills .soft-skills ul li {
+  list-style-type: initial;
+  list-style-position: inside;
+  padding: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .skills {
+    flex-direction: column;
+  }
+}
