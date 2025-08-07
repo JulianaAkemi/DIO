@@ -23,7 +23,7 @@ const Login = () => {
     formState: { errors, isValid },
   } = useForm<IFormLogin>({
     resolver: yupResolver(schema),
-    mode: "onBlur",
+    mode: "onChange",
     defaultValues,
     reValidateMode: "onChange",
   });
@@ -33,14 +33,18 @@ const Login = () => {
       <LoginContainer>
         <Column>
           <Title>Login</Title>
+
           <Spacing />
+
           <Input
             name="email"
             placeholder="Email"
             control={control}
             errorMessage={errors?.email?.message}
           />
+
           <Spacing />
+
           <Input
             name="password"
             type="password"
@@ -48,8 +52,10 @@ const Login = () => {
             control={control}
             errorMessage={errors?.password?.message}
           />
+
           <Spacing />
-          <Button title="Entrar" />
+
+          <Button title="Entrar" disabled={!isValid} />
         </Column>
       </LoginContainer>
     </Container>

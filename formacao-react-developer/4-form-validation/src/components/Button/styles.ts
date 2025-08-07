@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ButtonContainer = styled.button<{
   children: React.ReactNode;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  disabled: Boolean;
 }>`
   width: 100%;
   height: 42px;
@@ -15,5 +16,11 @@ export const ButtonContainer = styled.button<{
   &:hover {
     opacity: 0.6;
     cursor: pointer;
+  }
+
+  &:disabled {
+    background-color: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
   }
 `;
