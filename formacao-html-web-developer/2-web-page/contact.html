@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonetsu Izakaya</title>
+    <link rel="stylesheet" href="base.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="about.html">Sobre o Jonetsu</a></li>
+          <li><a href="services.html">Horário de Atendimento</a></li>
+          <li><a href="contact.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="header">
+          <img src="img/logo.jpg" alt="Logo Jonetsu Izakaya" />
+        </div>
+
+        <div class="content">
+          <div>
+            <h2>Entre em Contato Conosco</h2>
+            <p>
+              Preencha o formulário abaixo e nossa equipe entrará em contato o
+              mais breve possível.
+            </p>
+
+            <form action="#" method="POST">
+              <label for="nome">Nome:</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Seu nome completo"
+                required
+              />
+
+              <label for="email">E-mail:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Seu e-mail"
+                required
+              />
+
+              <label for="telefone">Telefone:</label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="Seu telefone"
+                required
+              />
+
+              <label for="mensagem">Mensagem:</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                placeholder="Escreva sua mensagem"
+                rows="4"
+                required
+              ></textarea>
+
+              <button type="submit">Enviar Mensagem</button>
+            </form>
+
+            <div>
+              <h2>Endereço:</h2>
+              <p>
+                Avenida Doutor Adhemar de Barros, 1534, Jardim Sao Dimas, São
+                José dos Campos 12245-011
+              </p>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.0317289372874!2d-45.897173724680634!3d-23.20551427904605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4b8a1b439a3f%3A0x14135e3708d8e55b!2sJonetsu%20Izakaya!5e0!3m2!1sen!2sbr!4v1756044960202!5m2!1sen!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div>
+            <h4>Siga-nos no Instagram</h4>
+            <a
+              href="https://www.instagram.com/jonetsuizakaya/?hl=en"
+              class="social-icon"
+              ><img src="img/logo2.png" alt="Instagram"
+            /></a>
+          </div>
+
+          <div>
+            <p>Receba em primeira mão as novidades do nosso cardápio!</p>
+            <form action="#" method="POST">
+              <input
+                type="email"
+                placeholder="Digite seu melhor e-mail"
+                required
+              />
+              <button type="submit">Assinar</button>
+            </form>
+          </div>
+
+          <div>
+            <p>
+              &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Jonetsu Izakaya - Todos os direitos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
